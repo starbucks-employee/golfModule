@@ -195,7 +195,7 @@ public class golfScript : MonoBehaviour {
           yield break;
         }
       }
-      for (int i = 0; i < Parameters.Length; i++)
+      for (int i = 0; i < Parameters[1].Length; i++)
       {
         KeypadButtons[int.Parse(Parameters[1][i].ToString())].OnInteract();
         yield return new WaitForSeconds(.1f);
